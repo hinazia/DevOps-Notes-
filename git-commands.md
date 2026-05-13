@@ -12,6 +12,11 @@
     git config --global user.email <email address>
 
 ## Basic Worflow
+
+    git add   -----> File Status from Untracked to Staged
+    git commit ----> File Status from Staged to Tracked
+
 ## Viewing Changes
 
-    git status ----> check what you added 
+    git status ----> check what you added
+    git log    ----> View the commit History 
