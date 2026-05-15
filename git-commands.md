@@ -17,6 +17,9 @@
     git commit ----> File Status from Staged to Tracked
     git rm <dir/file_name> -----> to delete file
     git rm --cached <file> -----> tell git to forget file without deleting it
+    git push origin main ---> local to remote
+    git pull origin main ---> remote to local
+    git clone <url> --------> clone an existing repo
 
 ## Viewing Changes
 
@@ -30,5 +33,7 @@
     git checkout -b <branch_name>     ----> creates a new branch with the commit history of the parent branch
                                             and also directly switches to it
     git switch/checkout <branch_name> ----> switches between branches
+
+
     
      
