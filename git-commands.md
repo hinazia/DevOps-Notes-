@@ -25,6 +25,7 @@
 
     git status ----> check what you added
     git log    ----> View the commit History
+    git log --oneline --graph --all ---> differnet log flags
 
 ## Branching
 
@@ -34,6 +35,16 @@
                                             and also directly switches to it
     git switch/checkout <branch_name> ----> switches between branches
 
+## Merge, Rebase, Stash, Cherry Pick, Reset & Revert
+
+    git merge <branch_name> ---> Merges one branch into other and updates the commits
+    git rebase <branch_name> --> Sequencing the commit history of two branches making them into a liner history
+    git stash <commit_id> -----> to save your work-in-progress to work on another topic instead of commiting
+    git stash pop -------------> to again start working on the work in progress
+    git cherry-pick <commit_id> ---> to merge selective commits into the branch
+    git reset --(soft,mixed,hard) <commit_id> ---> use to revert commits
+    git revert <commit_id> -------> use to undo content in file
+    
 
     
      
