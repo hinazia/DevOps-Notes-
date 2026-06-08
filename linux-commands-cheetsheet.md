@@ -33,7 +33,9 @@
 
 ## Permissions
 
-  chmod +rwx <filename>  
+  chmod +rwx <filename>
+  ls -ld <directoryname> ----> for checking directory permissions
+  ls -l <filename> ---------> for checking file permissions
 
 ## Disk I/O , Memory
 
@@ -41,3 +43,21 @@
   df -h -------> report filesystem Space usage in human readable form (Tells you how much space is used and available on a disk/partition)
   du -sh <filename eg /var/log) -----> estimate file space usage(Tells you how much space a specific folder or file consumes)
   iostat ------> Input Output statistics for devices and partitions, CPU Statistics
+
+## User Managment
+  useradd -m <username> ---> to create a new user
+  passwd <username> -------> to set password of that user
+  su - <username> ---------> to cd/switch into that user and write exit to come out
+  usermod -----------------> to modify user account or change the password or chang the group. Use the relative flags
+  chown <alreadyowner> <newowner> ----->  to change user to another
+  which bash -------------> to view the path of the user directory
+  cat etc/passwd ---------> account details
+  
+## Group Managment
+  groupadd <groupname> -------> to create a group
+  gpasswd <groupname>  -------> to set password
+  newgrp ---------------------> to refresh groups
+  sudo chgrp root hina ----------------------> to change group to another
+  groupdel <groupname>--------> to del group
+  cat etc/group ------------> group details
+  cat etc/shadow ------------> password details
