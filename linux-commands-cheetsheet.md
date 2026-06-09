@@ -10,7 +10,8 @@
   htop -----> Shows live CPU usage, memory, running processes
   ps   -----> report the snapshot of the current processes
   ps aux --sort%-cpu | head -3 -----> sorts the processes by highest CPU usage
-
+  ps aux --sort=-%mem | head -5 ----> sorts the processes by highest Memory usage
+  
 ## FileSystem
 
   mkdir ---->  create Directory
