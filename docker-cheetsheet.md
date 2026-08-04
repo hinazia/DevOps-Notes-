@@ -46,6 +46,7 @@
 
    - docker compose up --build, without --build, Docker may keep using the old image that does not contain your app file.
    - docker compose down -v , stopped and removed all services, volumes, networks etc
+   - docker compose build <image_name> , to build a specififc image in dockercompose yml
   
 ### Docker Multi Stage Build
 
@@ -73,5 +74,16 @@
 
     - docker compose logs .f
     - docker compose logs -f <service_name>
+
+  ### Image Upload to Docker Hub
+
+      - Login: docker login
+      - Tag: docker tag local-image:tag username/repo:tag
+      - Push: docker push username/repo:tag
+      - docker pull <image_name>
+      
+---
+
+  > **Note:** for a simple single-container app, Docker Hub pull is enough. For your 3-service application, Compose is the missing piece.
   
 
