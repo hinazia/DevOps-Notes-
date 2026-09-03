@@ -50,6 +50,7 @@
   passwd <username> -------> to set password of that user
   su - <username> ---------> to cd/switch into that user and write exit to come out
   usermod -----------------> to modify user account or change the password or chang the group. Use the relative flags
+  sudo usermod -aG <group> $USER ----> add user to the group
   chown <alreadyowner> <newowner> ----->  to change user to another
   which bash -------------> to view the path of the user directory
   cat etc/passwd ---------> account details
